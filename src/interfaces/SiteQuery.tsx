@@ -19,10 +19,12 @@ export interface SiteQuery {
         twitter: {
           username: string;
           url: string;
+          title: string;
         };
         github: {
           username: string;
           url: string;
+          title: string;
         };
       };
       Error404: string;

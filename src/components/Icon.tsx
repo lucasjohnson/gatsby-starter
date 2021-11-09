@@ -1,0 +1,27 @@
+import React from 'react';
+import { IconType } from '../enums';
+import { FaTwitter } from 'react-icons/fa';
+import { GoMarkGithub } from 'react-icons/go';
+
+const Icon: React.FC<IconProps> = ({ type }) => {
+  let icon;
+
+  switch (type) {
+    case IconType.TWITTER:
+      icon = <FaTwitter className="svg" />;
+      break;
+    case IconType.GITHUB:
+      icon = <GoMarkGithub className="svg" />;
+      break;
+    default:
+      return null;
+  }
+
+  return icon;
+};
+
+export default Icon;
+
+interface IconProps {
+  type: string | IconType.TWITTER | IconType.GITHUB;
+}
