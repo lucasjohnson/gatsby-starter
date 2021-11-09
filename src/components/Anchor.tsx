@@ -1,7 +1,6 @@
 import React from 'react';
-import Icon from './Icon';
 import { Link } from 'gatsby';
-import { AnchorVariant } from '../enums';
+import { AnchorVariant } from '../enums/Index';
 
 const Anchor: React.FC<AnchorProps> = ({
   className,

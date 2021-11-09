@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconType } from '../enums';
+import { IconType } from '../enums/Index';
 import { FaTwitter } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
 
