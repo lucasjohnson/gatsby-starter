@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-starter",
+  "description": "Bare-bones starter for Gatsby",
+  "author": "Lucas Johnson <contact@lucasjohnson.co.nz (@_lucasjohnson)>",
+  "private": false,
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^4.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasjohnson/gatsby-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasjohnson/gatsby-starter/issues"
+  }
+}
