@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { SiteQuery } from '../interfaces';
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/Head/SEO';
+import { Paragraph } from '../emotion/typography';
 
 const IndexPage: React.FC = () => {
   const { site } = useStaticQuery<SiteQuery>(graphql`
@@ -18,7 +19,7 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <SEO pageTitle={site.siteMetadata.title} />
-      <p>Hello World</p>
+      <Paragraph>Hello World</Paragraph>
     </Layout>
   );
 };

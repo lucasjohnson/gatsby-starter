@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter',
     url: 'my-gatsby-starter.vercel.app',
-    description: 'Bare-bones starter for Gatsby',
+    description: 'A bare-bones starter for Gatsby',
     author: 'Lucas Johnson',
     language: 'en',
     banner: {
@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bare-bones starter for Gatsby`,
+        name: `A bare-bones starter for Gatsby`,
         short_name: `Gatsby Starter`,
         start_url: `/`,
         background_color: `#ffffff`,

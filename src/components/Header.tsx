@@ -1,4 +1,5 @@
 import React from 'react';
+import { Heading } from '../emotion/typography';
 
 interface HeaderProps {
   title: string;
@@ -7,7 +8,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ title }) => {
   return (
     <header>
-      <h1>{title}</h1>
+      <Heading>{title}</Heading>
     </header>
   );
 };
