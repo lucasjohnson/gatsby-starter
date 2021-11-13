@@ -27,5 +27,5 @@ module.exports = {
     },
     Error404: '404: Page not found',
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-emotion`],
 };

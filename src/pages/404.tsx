@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { SiteQuery } from '../interfaces';
-import Layout from '../components/Layout';
+import Layout from '../components/Layout/Layout';
 import SEO from '../components/Head/SEO';
 
 const ErrorPage: React.FC = () => {
