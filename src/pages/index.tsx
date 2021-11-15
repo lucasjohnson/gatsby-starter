@@ -11,6 +11,7 @@ const IndexPage: React.FC = () => {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
@@ -19,7 +20,7 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <SEO pageTitle={site.siteMetadata.title} />
-      <Paragraph>Hello World</Paragraph>
+      <Paragraph>{site.siteMetadata.description}</Paragraph>
     </Layout>
   );
 };

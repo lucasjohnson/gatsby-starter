@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter',
-    url: 'my-gatsby-starter.vercel.app',
+    siteUrl: 'https://my-gatsby-starter.vercel.app/',
     description: 'A bare-bones starter for Gatsby',
     author: 'Lucas Johnson',
     language: 'en',
@@ -41,12 +41,20 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/assets/images/icon.png`,
         crossOrigin: `use-credentials`,
         cache_busting_mode: `none`,
       },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-emotion`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `/assets/svg/`,
+        },
+      },
+    },
   ],
 };

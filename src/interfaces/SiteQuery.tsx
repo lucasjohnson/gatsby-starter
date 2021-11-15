@@ -3,7 +3,7 @@ export interface SiteQuery {
     buildTime: string;
     siteMetadata: {
       title: string;
-      url: string;
+      siteUrl: string;
       description: string;
       author: string;
       language: string;

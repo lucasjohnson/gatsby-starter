@@ -30,7 +30,7 @@ const SEO: React.FC<SeoProps> = ({
         buildTime
         siteMetadata {
           title
-          url
+          siteUrl
           description
           author
           language
@@ -52,18 +52,26 @@ const SEO: React.FC<SeoProps> = ({
     }
   `);
 
-  const { title, url, description, author, banner, logo, language, social } =
-    site.siteMetadata;
+  const {
+    title,
+    siteUrl,
+    description,
+    author,
+    banner,
+    logo,
+    language,
+    social,
+  } = site.siteMetadata;
 
   const { buildTime } = site;
 
   const schemaWebPage = {
     '@context': `http://schema.org`,
     '@type': `WebPage`,
-    url: url,
+    url: siteUrl,
     description: description,
     inLanguage: language,
-    mainEntityOfPage: url,
+    mainEntityOfPage: siteUrl,
     name: title,
     author: {
       '@type': `Person`,
@@ -94,7 +102,7 @@ const SEO: React.FC<SeoProps> = ({
     {
       '@type': `ListItem`,
       item: {
-        '@id': url,
+        '@id': siteUrl,
         name: `Homepage`,
       },
       position: 1,
@@ -102,7 +110,7 @@ const SEO: React.FC<SeoProps> = ({
     {
       '@type': `ListItem`,
       item: {
-        '@id': `${url}`,
+        '@id': `${siteUrl}`,
         name: `Blog`,
       },
       position: 1,
@@ -133,19 +141,19 @@ const SEO: React.FC<SeoProps> = ({
         name: author,
         logo: {
           '@type': `ImageObject`,
-          url: `${url}/${logo}`,
+          url: `${siteUrl}${logo}`,
         },
       },
       description: description,
       headline: title,
       inLanguage: language,
-      url: `${url}/${pagePathname}`,
+      url: `${siteUrl}${pagePathname}`,
       name: title,
       image: {
         '@type': `ImageObject`,
-        url: `${url}/${banner}`,
+        url: `${siteUrl}/${banner}`,
       },
-      mainEntityOfPage: `${url}/${pagePathname}`,
+      mainEntityOfPage: `${siteUrl}/${pagePathname}`,
       datePublished: pageDate,
       dateModified: buildTime,
     };
@@ -153,7 +161,7 @@ const SEO: React.FC<SeoProps> = ({
     itemListElement.push({
       '@type': `ListItem`,
       item: {
-        '@id': `${url}/${pagePathname}`,
+        '@id': `${siteUrl}${pagePathname}`,
         name: title,
       },
       position: 2,
@@ -172,10 +180,10 @@ const SEO: React.FC<SeoProps> = ({
   const metaDescription: string = pageDescription
     ? pageDescription
     : description;
-  const metaUrl: string = pagePathname ? `${url}/${pagePathname}` : url;
+  const metaUrl: string = pagePathname ? `${siteUrl}${pagePathname}` : siteUrl;
   const metaBanner: string = pageBanner
-    ? `${url}/${pageBanner}`
-    : `${url}/${banner.image}`;
+    ? `${siteUrl}${pageBanner}`
+    : `${siteUrl}${banner.image}`;
   const metaBannerAlt: string = pageBannerAlt ? pageBannerAlt : banner.alt;
   const metaContentType: string = pageContentType ? pageContentType : `Website`;
 
