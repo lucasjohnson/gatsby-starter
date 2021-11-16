@@ -19,3 +19,8 @@
 - [Emotion](https://github.com/emotion-js/emotion)
 - [normalize.css](https://github.com/necolas/normalize.css)
 - [Prettier](https://prettier.io/)
+
+- [ ] landing page copy, readme
+- [ ] spinning logo with Motion
+- [ ] accessiblity
+- [ ] update repo detials and profile

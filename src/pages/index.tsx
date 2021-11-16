@@ -4,6 +4,7 @@ import { SiteQuery } from '../interfaces';
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/Head/SEO';
 import { Paragraph } from '../emotion/typography';
+import GatsbyIcon from '../assets/svg/gatsby.svg';
 
 const IndexPage: React.FC = () => {
   const { site } = useStaticQuery<SiteQuery>(graphql`
@@ -20,6 +21,7 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <SEO pageTitle={site.siteMetadata.title} />
+      <GatsbyIcon />
       <Paragraph>{site.siteMetadata.description}</Paragraph>
     </Layout>
   );
