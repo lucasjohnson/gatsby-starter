@@ -8,10 +8,10 @@ const Icon: React.FC<IconProps> = ({ type }) => {
 
   switch (type) {
     case IconType.TWITTER:
-      icon = <FaTwitter className="svg" />;
+      icon = <FaTwitter />;
       break;
     case IconType.GITHUB:
-      icon = <GoMarkGithub className="svg" />;
+      icon = <GoMarkGithub />;
       break;
     default:
       return null;

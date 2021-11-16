@@ -53,6 +53,11 @@ module.exports = {
       options: {
         rule: {
           include: /assets/,
+          options: {
+            props: {
+              className: 'svg',
+            },
+          },
         },
       },
     },
