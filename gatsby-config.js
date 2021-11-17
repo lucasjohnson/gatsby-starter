@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter',
     siteUrl: 'https://my-gatsby-starter.vercel.app/',
-    description: 'A bare-bones starter for Gatsby',
+    description:
+      'A bare-bones Gatsby TypeScript starter with out of the box SEO optimization.',
     author: 'Lucas Johnson',
     language: 'en',
     banner: {
@@ -21,7 +22,7 @@ module.exports = {
       },
       github: {
         username: 'lucasjohnson',
-        url: 'http://github.com/lucasjohnson',
+        url: 'https://github.com/lucasjohnson/gatsby-starter',
         title: 'GitHub',
       },
     },

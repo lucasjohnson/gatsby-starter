@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter",
-  "description": "A bare-bones starter for Gatsby",
+  "description": "A bare-bones Gatsby TypeScript starter with out of the box SEO optimization.",
   "author": "Lucas Johnson <contact@lucasjohnson.co.nz (@_lucasjohnson)>",
   "private": false,
   "version": "0.1.0",

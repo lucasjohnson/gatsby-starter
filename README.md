@@ -1,5 +1,7 @@
 # Gatsby Starter
 
+A bare-bones Gatsby TypeScript starter with out of the box SEO optimization.
+
 ## Install
 
 - `yarn`
@@ -8,7 +10,7 @@
 ## Configuration
 
 - Upate project and repository data in `package.json`
-- Update site metadata, and site manifest data in `gatsby-config.js` so that SEO and PWA functionality is configured
+- Update site metadata, and site manifest data in `gatsby-config.js` so that SEO and PWA functionality are configured correctly
 
 ## Technologies
 
@@ -17,10 +19,12 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [Helmet](https://github.com/nfl/react-helmet)
 - [Emotion](https://github.com/emotion-js/emotion)
+- [Motion Framer](https://www.framer.com/developers/)
 - [normalize.css](https://github.com/necolas/normalize.css)
 - [Prettier](https://prettier.io/)
 
-- [ ] landing page copy, readme
-- [ ] spinning logo with Motion
-- [ ] accessiblity
-- [ ] update repo detials and profile
+## TODO
+
+- [ ] Accessiblity
+- [ ] Storybook
+- [ ] Testing
