@@ -1,8 +1,8 @@
 import React from 'react';
 import Context from '../../context/Context';
-import Button from '../Core/Button';
-import { ButtonVariant } from '../../enums/index';
-import { Heading } from '../../emotion/typography';
+import styled from '@emotion/styled';
+import { ButtonPrimary } from '../../emotion/Button';
+import { Heading } from '../../emotion/Typography';
 
 interface HeaderProps {
   title: string;
@@ -11,14 +11,16 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ title }) => (
   <Context.Consumer>
     {({ toggleModal }) => (
-      <header>
+      <HeaderElement>
         <Heading>{title}</Heading>
-        <Button variant={ButtonVariant.PRIMARY} onClickFunction={toggleModal}>
-          Toggle Modal
-        </Button>
-      </header>
+        <ButtonPrimary onClick={toggleModal}>Toggle Modal</ButtonPrimary>
+      </HeaderElement>
     )}
   </Context.Consumer>
 );
 
 export default Header;
+
+const HeaderElement = styled.header`
+  text-align: center;
+`;

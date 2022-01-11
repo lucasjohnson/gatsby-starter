@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { motion } from 'framer-motion';
 import { SiteQuery } from '../interfaces';
 import Layout from '../components/Layout/Layout';
-import { Paragraph } from '../emotion/typography';
+import { Paragraph } from '../emotion/Typography';
 import GatsbyIcon from '../assets/svg/gatsby.svg';
 
 const IndexPage: React.FC = () => {
