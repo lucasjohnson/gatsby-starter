@@ -9,8 +9,8 @@ A bare-bones Gatsby TypeScript starter with out of the box SEO optimization.
 
 ## Configuration
 
-- Upate project and repository data in `package.json`
-- Update site metadata, and site manifest data in `gatsby-config.js` so that SEO and PWA functionality are configured correctly
+- Upate project and repository data in `package.json`.
+- Update site metadata, and site manifest data in `gatsby-config.js` so that SEO and PWA functionality are configured correctly.
 
 ## Technologies
 

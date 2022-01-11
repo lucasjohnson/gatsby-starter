@@ -26,7 +26,7 @@ module.exports = {
         title: 'GitHub',
       },
     },
-    Error404: '404: Page not found',
+    error404: '404: Page not found',
   },
   plugins: [
     `gatsby-plugin-image`,
