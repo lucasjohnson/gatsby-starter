@@ -2,7 +2,7 @@ import React from 'react';
 import Context from '../../context/Context';
 import styled from '@emotion/styled';
 import { ButtonPrimary } from '../../emotion/Button';
-import { Heading } from '../../emotion/Typography';
+import { Heading } from '../../emotion/typography';
 
 interface HeaderProps {
   title: string;
