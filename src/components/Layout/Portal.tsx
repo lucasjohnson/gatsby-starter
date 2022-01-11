@@ -5,7 +5,6 @@ const portalRoot =
   typeof document !== `undefined` && document.getElementById('portal');
 const element =
   typeof document !== `undefined` && document.createElement('div');
-element.classList.add('overlay');
 
 export default class extends React.Component {
   constructor(props: {}) {
