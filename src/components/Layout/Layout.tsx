@@ -4,6 +4,7 @@ import { SiteQuery } from '../../interfaces';
 import Header from '../Header';
 import Footer from '../Footer';
 import SEO from '../Head/SEO';
+import Modal from './Modal';
 
 interface LayoutProps {
   pageTitle: string;
@@ -15,16 +16,7 @@ interface LayoutProps {
   pagePathname?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({
-  pageTitle,
-  pageBanner,
-  pageBannerAlt,
-  pageContentType,
-  pageDate,
-  pageDescription,
-  pagePathname,
-  children,
-}) => {
+const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
   const { site } = useStaticQuery<SiteQuery>(graphql`
     query {
       site {
@@ -55,6 +47,7 @@ const Layout: React.FC<LayoutProps> = ({
       <Header title={title} />
       <main>{children}</main>
       <Footer social={social} />
+      <Modal />
     </React.Fragment>
   );
 };
