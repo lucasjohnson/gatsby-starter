@@ -1,7 +1,7 @@
 import React from 'react';
-import Anchor from './Anchor';
-import Icon from './Icon';
-import { IconType, AnchorVariant } from '../enums/Index';
+import Anchor from '../Core/Anchor';
+import Icon from '../Core/Icon';
+import { IconType, AnchorVariant } from '../../enums/Index';
 
 interface FooterProps {
   social: {

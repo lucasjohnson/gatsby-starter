@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading } from '../emotion/typography';
+import { Heading } from '../../emotion/Typography';
 
 interface HeaderProps {
   title: string;

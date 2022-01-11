@@ -1,6 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { AnchorVariant } from '../enums/Index';
+import { AnchorVariant } from '../../enums/Index';
+
+interface AnchorProps {
+  className?: string;
+  onClick?: () => void;
+  title: string;
+  url: string;
+  variant: AnchorVariant.LINK | AnchorVariant.EXTERNAL;
+}
 
 const Anchor: React.FC<AnchorProps> = ({
   className,
@@ -46,11 +54,3 @@ const Anchor: React.FC<AnchorProps> = ({
 };
 
 export default Anchor;
-
-interface AnchorProps {
-  className?: string;
-  onClick?: () => void;
-  title: string;
-  url: string;
-  variant: AnchorVariant.LINK | AnchorVariant.EXTERNAL;
-}

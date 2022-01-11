@@ -1,7 +1,11 @@
 import React from 'react';
-import { IconType } from '../enums/Index';
+import { IconType } from '../../enums/Index';
 import { FaTwitter } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
+
+interface IconProps {
+  type: string | IconType.TWITTER | IconType.GITHUB;
+}
 
 const Icon: React.FC<IconProps> = ({ type }) => {
   let icon;
@@ -21,7 +25,3 @@ const Icon: React.FC<IconProps> = ({ type }) => {
 };
 
 export default Icon;
-
-interface IconProps {
-  type: string | IconType.TWITTER | IconType.GITHUB;
-}
