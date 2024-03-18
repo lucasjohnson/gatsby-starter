@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconType } from '../../enums/Index';
 import { FaTwitter } from 'react-icons/fa';
-import { GoMarkGithub } from 'react-icons/go';
+import { FaGithub } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
 
 interface IconProps {
@@ -16,7 +16,7 @@ const Icon: React.FC<IconProps> = ({ type }) => {
       icon = <FaTwitter />;
       break;
     case IconType.GITHUB:
-      icon = <GoMarkGithub />;
+      icon = <FaGithub />;
       break;
     case IconType.CROSS:
       icon = <ImCross />;
